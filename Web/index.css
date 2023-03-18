@@ -1,0 +1,86 @@
+/*############# DEFAULT ###########*/
+nav, header, footer {
+    display: block;
+}
+
+body {
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*################### NAV BAR ################*/
+
+nav {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.topnav {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+ul.topnav li {
+    float:  left;
+    list-style: none;
+    
+    
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+ul.topnav li a {
+    text-decoration: none;
+    display: block;
+    padding: 14px;
+    color: black;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+ul.topnav li a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+/*############## MOBILE ################*/
+
+@media screen and (max-width:900px) {
+
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    
+    
+        
+    ul.topnav.responsive {
+        position: relative;
+    }
+    
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+} 

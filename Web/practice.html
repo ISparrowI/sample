@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <title>Practice</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">News</a></li>
+            <li class="topnav-right"><a href="#">Sign Up</a></li>
+            <li class="topnav-right"><a href="#">Sign In</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0)" onclick="dropdownClick()">&#9776;</a></li>
+        </ul>
+    </nav>
+    
+    
+    
+    
+    
+    <script>
+        function dropdownClick() {
+            var x = document.getElementById("dropdownMenu");
+            if (x.className === "topnav") {
+            x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
+        
+    </script>
+
+</body>
